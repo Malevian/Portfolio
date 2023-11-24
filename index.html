@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/07b9c6cd63.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/ShirokoTerror.jpg" class="logo" />
+                <ul id="sideMenu">
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <hr />
+            <div class="header-text">
+                <p>Game Programmer</p>
+                <h1>Trinh Hoang Viet (Andrew)</h1>
+                <p>I am working on creating computer games</p>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <!-- About me-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/HuTao1.jpg" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>
+                        I want to create a MMORPG game with fascinating gameplay and great design.
+                        I wish to create a stunning lore and so every player will be able to enjoy it.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="open_tab('skills')">Skills</p>
+                        <p class="tab-links" onclick="open_tab('experience')">Experience</p>
+                        <p class="tab-links" onclick="open_tab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Game design</span><br />Designing objects</li>
+                            <li><span>Game programming</span><br />Programming games</li>
+                            <li><span>Game development</span><br />Building games</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-2022</span><br />Simple game using Unity</li>
+                            <li><span>Insert text</span><br />Insert text</li>
+                            <li><span>Insert text</span><br />Insert text</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br />Kiev Politechnic Institute</li>
+                            <li><span>2022-2026</span><br />FPT University</li>
+                            <li><span>Insert text</span><br />Insert text</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My portfolio</h1>
+            <div class="work-list">
+                <hr />
+                <div class="work">
+                    <div class="left-side">
+                        <h2>01</h2>
+                        <p>FIRST PERSON SHOOTER</p>
+                    </div>
+                    <img src="images/Nilou.jpg" class="right-side" />
+                </div>
+                <div class="aboutWork">
+                    <h2>(Game Name)</h2>
+                    <h3>(Job assigned for the game)</h3>
+                    <p>Description</p>
+                </div>
+                <hr />
+                <div class="work">
+                    <div class="left-side">
+                        <h2>02</h2>
+                        <p>MMORPG</p>
+                    </div>
+                    <img src="images/HuTao2.jpg" class="right-side" />
+                </div>
+                <div class="aboutWork">
+                    <h2>(Game Name)</h2>
+                    <h3>(Job assigned for the game)</h3>
+                    <p>Description</p>
+                </div>
+                <hr />
+                <div class="work">
+                    <div class="left-side">
+                        <h2>03</h2>
+                        <p>Casual Game</p>
+                    </div>
+                    <img src="images/Jingliu.jpg" class="right-side" />
+                </div>
+                <div class="aboutWork">
+                    <h2>(Game Name)</h2>
+                    <h3>(Job assigned for the game)</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <hr />
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://telegram.com/"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email" required />
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="#top" class="back-to-top">TO THE TOP</a>
+    </footer>
+    <div class="copyright">
+        <p>Copyright © Andrew. Made by Malevian</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

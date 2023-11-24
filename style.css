@@ -1,0 +1,332 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #010127;
+    color: #fff;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/night.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+
+}
+/*About me*/
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.subtitle {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*My portfolio*/
+#portfolio{
+    padding: 50px 0;
+}
+.work{
+    display: flex;
+    padding: 80px;
+}
+.left-side{
+    flex-basis: 30%;
+    text-align: center;
+}
+.left-side h2{
+    font-size: 50px;
+    padding-bottom: 70%;
+}
+.left-side p{
+    font-size: 15px;
+    transform: rotate(-90deg);
+    font-family: Montserrat;
+}
+.right-side{
+    max-height: 50%;
+    max-width: 50%;
+    flex-basis: 80%;
+    border-radius: 15px;
+}
+.aboutWork{
+    padding: 0 20vw;
+}
+.aboutWork h2{
+    font-size: 50px;
+    padding: 0.5em 0;
+}
+.aboutWork h3{
+    font-size: 20px;
+    padding: 20px 0;
+}
+.aboutWork p{
+    font-size: 15px;
+    padding: 20px 0;
+}
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover {
+    background: #00ffff;
+}
+/*Contact*/
+.social-icons a {
+    color: #ababab;
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 30px;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #00ffff;
+    transform: translateY(-5px);
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-left p {
+    margin: 30px 0;
+}
+.contact-left p i{
+    color: #00ffff;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.contact-right {
+    flex-basis: 60%;
+}
+.contact-right form{
+    width: 100%;
+}
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+footer{
+    text-align: right;
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+    padding-right: 20px;
+    font-size: 15px;
+    font-family: Montserrat;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Responsive design*/
+nav .fa-solid {
+    display: none;
+}
+@media screen and (max-width: 720px){
+    .header-text{
+        margin-bottom: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50%;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .subtitle{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .left-side{
+        flex-basis: 100%;
+    }
+    .right-side{
+        max-height: 100%;
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .aboutWork {
+        padding: 0 10vw;
+    }
+    .aboutWork h2 {
+        font-size: 30px;
+    }
+    .aboutWork p {
+        font-size: 14px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
